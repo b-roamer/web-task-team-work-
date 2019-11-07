@@ -28,3 +28,5 @@ function onTasksReceived(tasks){
           document.getElementById("items").appendChild(li);
         }
         document.getElementById("myInput").value = "";
+	})
+}
