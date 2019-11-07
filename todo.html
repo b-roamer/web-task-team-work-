@@ -1,5 +1,4 @@
 <html>
-
 <head>
     <title>To Do</title>
     <link rel="stylesheet" href="style.css">
@@ -10,31 +9,24 @@
     <div id="header">
         <p>My ToDo List</p>
     </div>
-
     <div id="card_container">
         <div class="card">
             <p class="card_title">Do</p>
-
-            <ul id="items">
-                <li>
-                    <img class="checkmark" src="img/icons8-checked-2.svg" alt=""><span>Something</span>
-                </li>
-                <li class="done">
-                    <img class="checkmark" src="img/icons8-clock.svg" alt=""><span>Something</span>
-                </li>
-                <li>
-                    <img class="checkmark" src="img/icons8-checked-2.svg" alt=""><span>Something</span>
-                </li>
-            </ul>
-
+            <div class="tasksButton">
+              <button id="get-tasks">Get Tasks</button><button id="create-tasks">Create Tasks</button>
+            </div>
+            <ul id="items"></ul>
+            <ul id="itemsGet"></ul>
             <div id="new">
-                <input type="text"><img src="img/icons8-plus.svg" alt="">
+                <input type="text" id="myInput" placeholder="Title..."><img src="img/icons8-plus.svg" onclick="newElement()" class="addBtn">
             </div>
         </div>
 
     </div>
-
-
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/3.0.0/fetch.min.js"></script>
+    <script src="serverProject.js"></script>
+    <script src="ulProject.js"></script>
 </body>
 
 </html>
