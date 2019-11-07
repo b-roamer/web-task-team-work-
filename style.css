@@ -19,3 +19,32 @@ ul
     color: black;
 }
 
+#card_container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card
+{
+    border-radius: 30px;
+    background-color: white;
+    height: 70%;
+    width: 380px;
+    margin: 50px;
+    margin-top: 0px;
+    padding-left: 35px;
+    box-shadow: 0px 0px 52px -11px rgba(0,0,0,0.75);
+    position: relative;
+}
+
+.card .card_title
+{
+    width: 345px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}
