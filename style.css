@@ -1,0 +1,21 @@
+body
+{
+    background: rgb(0,255,250);
+    background: linear-gradient(105deg, rgba(0,255,250,1) 0%, rgba(0,140,255,1) 100%);
+}
+
+ul
+{
+    list-style: none;
+}
+
+#header p
+{
+    font-family: 'Roboto', sans-serif;
+    padding-left: 50px;
+    padding-top: 50px;
+    font-size: 50px;
+    font-weight: 700;
+    color: black;
+}
+
