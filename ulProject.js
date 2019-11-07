@@ -14,3 +14,17 @@ createTasksButton.addEventListener("click",()=>{
 	console.log(data);
 	});
 });
+function onTasksReceived(tasks){
+	const result = document.querySelector("#itemsGet");
+	result.innerHTML="";
+	tasks.forEach(task => {
+		var li = document.createElement("li");
+        var inputValue = task.title;
+        var t = document.createTextNode(inputValue);
+        li.appendChild(t);
+        if (inputValue === '') {
+          alert("You must write something!");
+        } else {
+          document.getElementById("items").appendChild(li);
+        }
+        document.getElementById("myInput").value = "";
